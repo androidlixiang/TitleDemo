@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.lixiang.titledemo.activity.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mRadioGroup" />
+
+    <RadioGroup
+        android:id="@+id/mRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fafafa"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/HomeRadioButton"
+            style="@style/RadioButton_style"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:drawableTop="@drawable/my"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/ShoppingRadioButton"
+            style="@style/RadioButton_style"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/shopping"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/MyRadioButton"
+            style="@style/RadioButton_style"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/home"
+            android:text="我的" />
+    </RadioGroup>
+
+</RelativeLayout>
